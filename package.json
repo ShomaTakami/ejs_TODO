@@ -10,7 +10,7 @@
   "author": "Shoma",
   "license": "ISC",
   "engines": {
-    "node": "10.x"
+    "node": "10.16.0"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
