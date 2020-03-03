@@ -15,10 +15,13 @@ app.use(express.static("public"));
 // const items = ["Add", "Whatever", "You want"];
 // const workItems = [];
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+mongoose.connect(
+  "mongodb+srv://shoma-udemy:Takami112@cluster0-4vbnf.mongodb.net/todolistDB",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  }
+);
 
 const itemSchema = mongoose.Schema({
   name: String
