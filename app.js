@@ -19,11 +19,7 @@ mongoose.set("useCreateIndex", true);
 mongoose.set("useUnifiedTopology", true);
 
 mongoose.connect(
-  "mongodb+srv://shoma-udemy:Takami112@cluster0-4vbnf.mongodb.net/todolistDB",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  }
+  "mongodb+srv://shoma-udemy:Takami112@cluster0-4vbnf.mongodb.net/todolistDB"
 );
 
 const itemSchema = mongoose.Schema({
