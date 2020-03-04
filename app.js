@@ -12,8 +12,11 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-// const items = ["Add", "Whatever", "You want"];
-// const workItems = [];
+// To address Mongoose deprecation warnings
+mongoose.set("useNewUrlParser", true);
+mongoose.set("useFindAndModify", false);
+mongoose.set("useCreateIndex", true);
+mongoose.set("useUnifiedTopology", true);
 
 mongoose.connect(
   "mongodb+srv://shoma-udemy:Takami112@cluster0-4vbnf.mongodb.net/todolistDB",
