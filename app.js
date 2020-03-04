@@ -31,14 +31,8 @@ const Item = mongoose.model("Item", itemSchema);
 const item1 = new Item({
   name: "ADD"
 });
-const item2 = new Item({
-  name: "WHATEVER"
-});
-const item3 = new Item({
-  name: "YOU WANT"
-});
 
-const defaultItems = [item1, item2, item3];
+const defaultItems = [item1];
 
 const listSchema = {
   name: String,
